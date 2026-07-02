@@ -137,7 +137,7 @@
     .section-header.centered .section-desc { margin: 0.75rem auto 0; }
 
     /* ===================== WYRÓŻNIKI ===================== */
-    .features { background: var(--white); }
+    .features { background: transparent; }
     .features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
     .feature-card { text-align: center; padding: 2rem 1.25rem; border-radius: var(--radius); border: 1px solid #EEF3F8; transition: all var(--transition); }
     .feature-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--blue-mid); }
@@ -146,7 +146,7 @@
     .feature-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; }
 
     /* ===================== OFERTA ===================== */
-    .oferta { background: var(--blue-light); position: relative; }
+    .oferta { background: transparent; position: relative; }
     .oferta .section-inner { position: relative; z-index: 1; }
     .oferta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
     .oferta-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: all var(--transition); }
@@ -318,6 +318,53 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { transition: none !important; animation: none !important; }
     }
+
+    @media (min-width:1024px){
+
+.desktop-medical-bg{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.desktop-medical-bg::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:url("nd-bg.png") center top / cover no-repeat;
+
+    opacity:.30;
+
+    z-index:0;
+
+}
+
+.desktop-medical-bg>*{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+}
+
+@media (min-width:1024px){
+
+.features .bg-decor,
+.oferta .bg-decor{
+
+    display:none;
+
+}
+
+}
   </style>
 </head>
 <body>
@@ -434,8 +481,10 @@
   </div>
 </section>
 
+<div class="desktop-medical-bg">
+
 <!-- ==================== WYRÓŻNIKI ==================== -->
-<section class="section features" id="o-nas">
+<section class="section features" id="o-nas" background-image="/Users/dejt/Documents/Rehapartner/Rehapartner-background.png">
   <!-- Dekoracje tła -->
   <div class="bg-decor" aria-hidden="true">
     <!-- Siatki kropek -->
@@ -561,6 +610,7 @@
     </div>
   </div>
 </section>
+</div>
 
 <!-- ==================== WYRÓŻNIONE PRODUKTY ==================== -->
 <section class="section featured-products" id="wyroznione-produkty">
@@ -803,6 +853,9 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-logo">
+      <div class="footer-logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2v-5h2v5zm0-7h-2V7h2v2z"/></svg>
+      </div>
       <span class="footer-logo-name">RehaPartner</span>
     </div>
     <div class="footer-meta">
