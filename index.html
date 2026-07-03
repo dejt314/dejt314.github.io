@@ -149,17 +149,17 @@
     .oferta { background: transparent; position: relative; }
     .oferta .section-inner { position: relative; z-index: 1; }
     .oferta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    .oferta-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: all var(--transition); }
+    .oferta-card {display: flex; flex-direction: column; background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: all var(--transition); }
     .oferta-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
     .oferta-card-top { background: var(--navy); padding: 1.75rem 1.5rem; }
     .oferta-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
     .oferta-card-title { font-size: 1.15rem; font-weight: 800; color: var(--white); }
     .oferta-card-subtitle { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-top: 0.2rem; }
-    .oferta-card-body { padding: 1.5rem; }
+    .oferta-card-body {flex: 1; padding: 1.5rem; }
     .oferta-list { display: flex; flex-direction: column; gap: 0.55rem; }
     .oferta-list li { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.88rem; color: var(--text-muted); line-height: 1.45; }
     .oferta-list li::before { content: ''; width: 6px; height: 6px; background: var(--blue); border-radius: 50%; flex-shrink: 0; margin-top: 0.45em; }
-    .oferta-card-cta { display: block; margin: 1.25rem 1.5rem 1.5rem; padding: 0.7rem; background: var(--blue-light); color: var(--navy); font-weight: 700; font-size: 0.88rem; border-radius: 8px; text-align: center; transition: all var(--transition); }
+    .oferta-card-cta { display: block; margin: auto 1.5rem 1.5rem; padding: 0.7rem; background: var(--blue-light); color: var(--navy); font-weight: 700; font-size: 0.88rem; border-radius: 8px; text-align: center; transition: all var(--transition); }
     .oferta-card-cta:hover { background: var(--blue); color: var(--white); }
 
     /* ===================== NFZ BANER ===================== */
