@@ -190,15 +190,18 @@
     .featured-products .section-inner { position: relative; z-index: 1; }
     .featured-products .section-title { color: var(--white); }
     .featured-products .section-desc { color: rgba(255,255,255,0.68); }
-    .featured-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .featured-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
     .featured-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius); overflow: hidden; box-shadow: 0 12px 40px rgba(15,34,64,0.24); transition: all var(--transition); }
     .featured-card:hover { transform: translateY(-4px); background: rgba(255,255,255,0.11); border-color: rgba(255,255,255,0.22); }
     .featured-image { height: 300px; background: var(--white); overflow: hidden; }
     .featured-image img { width: 100%; height: 100%; object-fit: contain; padding: 1.25rem; }
     .featured-body { padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; gap: 1.25rem; }
-    .featured-title { min-height: 2.0em; font-size: 1.75rem; font-weight: 800; color: var(--white); line-height: 1.3; }
+    .featured-title { min-height: 2.5em; font-size: 1.75rem; font-weight: 800; color: var(--white); line-height: 1.3; }
     .featured-card .btn { background: var(--gold); color: var(--navy-dark); }
     .featured-card .btn:hover { background: #f0b45a; box-shadow: 0 6px 24px rgba(232,163,61,0.28); }
+    #schodolaz { background-color: #1e4d8c; border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius); overflow: hidden; box-shadow: 0 12px 40px rgba(15,34,64,0.24); transition: all var(--transition); }
+    #MDH-link{transition: all 0.3s ease; color: #2D8FD4;}
+    #MDH-link:hover{color:#E8A33D; font-weight: bold;}
 
     /* ===================== MARKI ===================== */
     .marki { background: var(--white); padding: 4rem 1.5rem; }
@@ -620,7 +623,7 @@
     <div class="section-header centered">
       <p class="nfz-eyebrow">Wyróżnione produkty</p>
       <h2 class="section-title">Sprawdzone rozwiązania dla aktywności i niezależności</h2>
-      <p class="section-desc">Wybrane produkty dostępne w RehaPartner — doradzimy, dopasujemy i pomożemy w formalnościach.</p>
+      <p class="section-desc">Wybrane produkty dostępne w RehaPartner - dystrybutora <span id="MDH-link"><a href="https://mdh.pl/">MDH</a></span>.</p>
     </div>
     <div class="featured-grid">
       <article class="featured-card">
@@ -629,6 +632,16 @@
         </div>
         <div class="featured-body">
           <h3 class="featured-title">Wózek elektryczny EASY GO</h3>
+          <a href="tel:+48790813213" class="btn">📞 Zapytaj o produkt</a>
+        </div>
+      </article>
+
+      <article class="featured-card" id="schodolaz">
+        <div class="featured-image">
+          <img src="/yack_n971.jpg" alt="Schodołaz Yack N971" loading="lazy" />
+        </div>
+        <div class="featured-body">
+          <h3 class="featured-title">Schodołaz Yack N971</h3>
           <a href="tel:+48790813213" class="btn">📞 Zapytaj o produkt</a>
         </div>
       </article>
