@@ -199,9 +199,10 @@
     .featured-title { min-height: 2.5em; font-size: 1.75rem; font-weight: 800; color: var(--white); line-height: 1.3; }
     .featured-card .btn { background: var(--gold); color: var(--navy-dark); }
     .featured-card .btn:hover { background: #f0b45a; box-shadow: 0 6px 24px rgba(232,163,61,0.28); }
-    #schodolaz { background-color: #1e4d8c; border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius); overflow: hidden; box-shadow: 0 12px 40px rgba(15,34,64,0.24); transition: all var(--transition); }
-    #MDH-link{transition: all 0.3s ease; color: #2D8FD4;}
-    #MDH-link:hover{color:#E8A33D; font-weight: bold;}
+    #schodolaz { background-color: #E8A33D; border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius); overflow: hidden; box-shadow: 0 12px 40px rgba(15,34,64,0.24); transition: all var(--transition); }
+    #schodolaz .btn{background-color: #1e4d8c; color: white;}
+    #MDH-text{color: #E8A33D; font-size: 1.1em;}
+    #MDH-link{font-weight: bold; transition: all 0.3s ease;}
 
     /* ===================== MARKI ===================== */
     .marki { background: var(--white); padding: 4rem 1.5rem; }
@@ -623,7 +624,10 @@
     <div class="section-header centered">
       <p class="nfz-eyebrow">Wyróżnione produkty</p>
       <h2 class="section-title">Sprawdzone rozwiązania dla aktywności i niezależności</h2>
-      <p class="section-desc">Wybrane produkty dostępne w RehaPartner - dystrybutora <span id="MDH-link"><a href="https://mdh.pl/">MDH</a></span>.</p>
+      <p class="section-desc">
+        Wybrane produkty dostępne w RehaPartner.<br>
+        <span id="MDH-text">Jesteśmy dystrybutorem firmy <a href="https://mdh.pl/" target="_blank"><span id="MDH-link">MDH</span></a></span>
+      </p>
     </div>
     <div class="featured-grid">
       <article class="featured-card">
